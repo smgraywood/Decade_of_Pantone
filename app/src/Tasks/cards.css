@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+body{
+    background-color:#BDBBBB ;
+}
+.title{
+    text-align: center;
+    margin: auto 0;
+font-family:'Limelight', cursive;
+font-size: 100px;
+color:transparent;
+-webkit-text-stroke: .2px #FFF;
+}
+
+.card-wrapper{
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+  }
+  .top1{
+    background-color: #CF5476;
+    height: 75px;
+    width: 98px;
+  }
+  .top2{
+    background-color: #DD4124;
+    height: 75px;
+    width: 98px;
+  }
+  .top3{
+    background-color: #009B77;
+    height: 75px;
+    width: 98px;
+  }
+  .top4{
+    background-color: #B163A3;
+    height: 75px;
+    width: 98px;
+  }
+  .top5{
+    background-color: #97504C;
+    height: 75px;
+    width: 98px;
+  }
+  .top6{
+    background-color: #B3CEE5;
+    height: 75px;
+    width: 98px;
+  }
+  .top7{
+    background-color: #f7cac9;
+    height: 75px;
+    width: 98px;
+  }
+  .top8{
+    background-color: #88B04B;
+    height: 75px;
+    width: 98px;
+  }
+  .top9{
+    background-color: #604c8d;
+    height: 75px;
+    width: 98px;
+  }
+  .top10{
+    background-color: #ff6f61;
+    height: 75px;
+    width: 98px;
+  }
+  .top11{
+    background-color: #34558b;
+    height: 75px;
+    width: 98px;
+  }
+  .top12{
+    background-color: #959A9C;
+    height: 75px;
+    width: 98px;
+  }
+  .top13{
+    background-color: #F5DF4D;
+    height: 75px;
+    width: 98px;
+  }
+
+  .card{
+    border: solid 1px black;
+    width: 100px;
+    height:125px;
+    margin: 5px;
+    background-color: #FFF;
+  }
+  .card-text{
+      font-size: 10px;
+      background-color: #FFF;
+  }
+  .pride_form{
+    margin: auto 0;
+    justify-content: center;
+  }
