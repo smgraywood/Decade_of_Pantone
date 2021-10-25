@@ -1,0 +1,7 @@
+CREATE TABLE pride(ID int generated always as identity, color_name text, release_year int, image_url text, image_description text, instagram_handle varchar);
+
+CREATE TABLE color(ID int generated always as identity, color_name text, hex varchar(7), release_year int);
+
+INSERT INTO color(color_name, hex, release_year) VALUES('Honeysuckle', #DB4F70, 2011), ('Tangerine Tango', #DE4123, 2012), ('Emerald', #019573, 2013), ('Radiant Orchid', #AC5E9C, 2014), ('Marsala', #97504C, 2015), ('Serenity', #91A8D0, 2016), ('Rose Quartz', #F8CACC, 2016), ('Greenery', #88B04B, 2017), ('Ultra Violet', #5F4C8B, 2018), ('Living Coral', #FF6F61, 2019), ('Classic Blue', #919397, 2020), ('Ultimate Gray', #919397, 2021), ('Illuminating', #F8DD4E, 2021);
+
+INSERT INTO color(color_name, hex, release_year) VALUES('Honeysuckle', #DB4F70, 2011);
