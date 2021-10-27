@@ -4,8 +4,7 @@ import * as apiClient from "../apiClient";
 
 import { Cards } from "./Cards";
 import { Form } from "./Form";
-import "./cards.css";
-import styles from "./styles.module.scss";
+import "./index.css";
 
 const Tasks = () => {
   const [tasks, setTasks] = React.useState([]);
@@ -31,26 +30,26 @@ const Tasks = () => {
   );
 };
 
-const TaskList = ({ tasks }) => (
-  <ul className={styles.list}>
-    {tasks.map(({ id, name }) => (
-      <li key={id}>{name}</li>
-    ))}
-  </ul>
-);
+// const TaskList = ({ tasks }) => (
+//   <ul className={styles.list}>
+//     {tasks.map(({ id, name }) => (
+//       <li key={id}>{name}</li>
+//     ))}
+//   </ul>
+// );
 
 const AddPride = ({ addPride }) => {
-  const [task, setTask] = React.useState("");
+  // const [task, setTask] = React.useState("");
 
-  const canAdd = task !== "";
+  // const canAdd = task !== "";
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    if (canAdd) {
-      addPride(task);
-      setTask("");
-    }
-  };
+  // const onSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (canAdd) {
+  //     addPride(task);
+  //     setTask("");
+  //   }
+  // };
 
   return (
     // <form {...{ onSubmit }}>
