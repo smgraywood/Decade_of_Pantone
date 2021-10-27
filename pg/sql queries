@@ -2,6 +2,6 @@ CREATE TABLE pride_form(ID int generated always as identity, color_name text, re
 
 CREATE TABLE colors(ID int generated always as identity, color_name text, hex bytea, release_year int);
 
-INSERT INTO colors(color_name, hex, release_year) VALUES('Honeysuckle', #DB4F70, 2011), ('Tangerine Tango', #DE4123, 2012), ('Emerald', #019573, 2013), ('Radiant Orchid', #AC5E9C, 2014), ('Marsala', #97504C, 2015), ('Serenity', #91A8D0, 2016), ('Rose Quartz', #F8CACC, 2016), ('Greenery', #88B04B, 2017), ('Ultra Violet', #5F4C8B, 2018), ('Living Coral', #FF6F61, 2019), ('Classic Blue', #919397, 2020), ('Ultimate Gray', #919397, 2021), ('Illuminating', #F8DD4E, 2021);
+INSERT INTO colors(color_name, hex, release_year) VALUES('Honeysuckle', E'\\xCF5476', 2011), ('Tangerine Tango', E'\\xDD4124', 2012), ('Emerald', E'\\x009B77', 2013), ('Radiant Orchid', E'\\xB163A3', 2014), ('Marsala', E'\\x97504C', 2015), ('Serenity', E'\\xB3CEE5', 2016), ('Rose Quartz', E'\\xF7CAC9', 2016), ('Greenery', E'\\x88B04B', 2017), ('Ultra Violet', E'\\x604C8D', 2018), ('Living Coral', E'\\xFF6F61', 2019), ('Classic Blue', E'\\x34558B', 2020), ('Ultimate Gray', E'\\x959A9C', 2021), ('Illuminating', E'\\xF5DF4D', 2021);
 
-INSERT INTO colors(color_name, hex, release_year) VALUES('Honeysuckle', #DB4F70, 2011);
+INSERT INTO colors(color_name, hex, release_year) VALUES('Honeysuckle', E'\\xCF5476', 2011);

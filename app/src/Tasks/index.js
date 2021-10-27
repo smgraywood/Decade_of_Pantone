@@ -4,7 +4,7 @@ import * as apiClient from "../apiClient";
 
 import { Cards } from "./Cards";
 import { Form } from "./Form";
-import "./cards.css";
+import "./index.css";
 import styles from "./styles.module.scss";
 
 const Tasks = () => {
