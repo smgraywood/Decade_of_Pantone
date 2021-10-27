@@ -6,10 +6,10 @@ body{
 .title{
     text-align: center;
     margin: auto 0;
-font-family:'Limelight', cursive;
-font-size: 100px;
-color:transparent;
--webkit-text-stroke: .2px #FFF;
+  font-family:'Limelight', cursive;
+  font-size: 100px;
+  color:transparent;
+  -webkit-text-stroke: .2px #FFF;
 }
 
 .card-wrapper{
@@ -98,4 +98,3 @@ color:transparent;
     margin: auto 0;
     justify-content: center;
   }
-  /*this is something to commit

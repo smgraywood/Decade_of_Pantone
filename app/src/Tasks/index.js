@@ -21,7 +21,6 @@ const Tasks = () => {
       <h1 className="title">A Decade of Pantone</h1>
       <section>
         <Cards />
-        {/* <TaskList {...{ tasks }} /> */}
         <form className="pride_form">
           <AddPride {...{ addPride }} />
         </form>
@@ -30,39 +29,8 @@ const Tasks = () => {
   );
 };
 
-// const TaskList = ({ tasks }) => (
-//   <ul className={styles.list}>
-//     {tasks.map(({ id, name }) => (
-//       <li key={id}>{name}</li>
-//     ))}
-//   </ul>
-// );
-
 const AddPride = ({ addPride }) => {
-  // const [task, setTask] = React.useState("");
-
-  // const canAdd = task !== "";
-
-  // const onSubmit = (e) => {
-  //   e.preventDefault();
-  //   if (canAdd) {
-  //     addPride(task);
-  //     setTask("");
-  //   }
-  // };
-
-  return (
-    // <form {...{ onSubmit }}>
-    //   <label>
-    //     New task:{" "}
-    //     <input onChange={(e) => setTask(e.currentTarget.value)} value={task} />
-    //   </label>
-    //   <button disabled={!canAdd} className={styles.button}>
-    //     Add
-    //   </button>
-    // </form>
-    <Form />
-  );
+  return <Form />;
 };
 
 export default Tasks;
