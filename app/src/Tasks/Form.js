@@ -29,7 +29,6 @@ function Form({ Post, addPost }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("submitted");
     addPost({
       color_name: color_name,
       release_year: release_year,
@@ -40,10 +39,10 @@ function Form({ Post, addPost }) {
   };
 
   return (
-    <div>
+    <div className="form-wrapper">
       <br />
       <form className="pride_form">
-        <h3 id="form">Show Your Pantone Pride!</h3>
+        <h3 id="form-title">Show Your Pantone Pride!</h3>
         <label>
           Color Name:{" "}
           <input
@@ -100,12 +99,9 @@ function Form({ Post, addPost }) {
         </label>{" "}
         <br />
         <br />
-        <button id="addpost" onClick={handleSubmit}>
-          Add Post
+        <button id="form-submit" onClick={handleSubmit}>
+          SUBMIT
         </button>
-        {/* <h5>
-          Player 1: {state.Player_Name} {state.X_or_O}
-        </h5> */}
       </form>
     </div>
   );
