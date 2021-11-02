@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Form = ({ Post, addPost }) => {
+const Form = ({ Post, addPost, closeForm }) => {
   const [color_name, setColor_name] = useState("");
   const [release_year, setRelease_year] = useState("");
   const [image_url, setImage_url] = useState("");
@@ -36,6 +36,7 @@ const Form = ({ Post, addPost }) => {
       image_description: image_description,
       instagram_handle: instagram_handle,
     });
+    closeForm();
   };
 
   return (

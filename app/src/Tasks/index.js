@@ -11,11 +11,14 @@ const Tasks = () => {
 
   const loadTasks = async () => setTasks(await apiClient.getTasks());
   const addPride = (task) => apiClient.addTask(task).then(loadTasks);
+  const addPost = (data) => {
+    //place holder function to send data to API
+    console.log(data);
+  };
 
   const [showForm, setShowForm] = React.useState(false);
   const openForm = () => {
     setShowForm(true);
-    console.log("this is the open form function");
   };
   const closeForm = () => {
     setShowForm(false);
@@ -33,8 +36,9 @@ const Tasks = () => {
         <JoinConvo openForm={openForm} />
         {showForm ? (
           <form className="pride_form">
-            <AddPride
-              addPride={addPride}
+            <AddPrideForm
+              addPride={addPride} // Find out what you this to do
+              addPost={addPost} //This function will add a post to our BE
               closeForm={closeForm} // will change the form value to open and close =>Function
             />
           </form>
@@ -60,8 +64,8 @@ const JoinConvo = ({ openForm }) => {
     </>
   );
 };
-const AddPride = ({ addPride, closeForm }) => {
-  return <Form />;
+const AddPrideForm = ({ addPride, addPost, closeForm }) => {
+  return <Form closeForm={closeForm} addPost={addPost} />;
 };
 
 export default Tasks;
