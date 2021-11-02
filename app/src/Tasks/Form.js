@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Form({ Post, addPost }) {
+const Form = ({ Post, addPost }) => {
   const [color_name, setColor_name] = useState("");
   const [release_year, setRelease_year] = useState("");
   const [image_url, setImage_url] = useState("");
@@ -105,5 +105,5 @@ function Form({ Post, addPost }) {
       </form>
     </div>
   );
-}
-export { Form };
+};
+export default Form;
