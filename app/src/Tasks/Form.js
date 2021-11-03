@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Form({ Post, addPost }) {
+const Form = ({ Post, addPost, closeForm }) => {
   const [color_name, setColor_name] = useState("");
   const [release_year, setRelease_year] = useState("");
   const [image_url, setImage_url] = useState("");
@@ -29,7 +29,6 @@ function Form({ Post, addPost }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("submitted");
     addPost({
       color_name: color_name,
       release_year: release_year,
@@ -37,13 +36,14 @@ function Form({ Post, addPost }) {
       image_description: image_description,
       instagram_handle: instagram_handle,
     });
+    closeForm();
   };
 
   return (
-    <div>
+    <div className="form-wrapper">
       <br />
       <form className="pride_form">
-        <h3 id="form">Show Your Pantone Pride!</h3>
+        <h3 id="form-title">Show Your Pantone Pride!</h3>
         <label>
           Color Name:{" "}
           <input
@@ -100,14 +100,11 @@ function Form({ Post, addPost }) {
         </label>{" "}
         <br />
         <br />
-        <button id="addpost" onClick={handleSubmit}>
-          Add Post
+        <button id="form-submit" onClick={handleSubmit}>
+          SUBMIT
         </button>
-        {/* <h5>
-          Player 1: {state.Player_Name} {state.X_or_O}
-        </h5> */}
       </form>
     </div>
   );
-}
-export { Form };
+};
+export default Form;

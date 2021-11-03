@@ -1,4 +1,4 @@
-CREATE TABLE pride_form(ID int generated always as identity, color_name text, release_year int, image_url text, image_description text, instagram_handle varchar);
+CREATE TABLE posts(ID int generated always as identity, color_name text, release_year int, image_url text, image_description text, instagram_handle varchar);
 
 CREATE TABLE colors(ID int generated always as identity, color_name text, hex bytea, release_year int);
 
