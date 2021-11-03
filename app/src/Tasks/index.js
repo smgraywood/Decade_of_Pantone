@@ -3,7 +3,7 @@ import * as React from "react";
 import * as apiClient from "../apiClient";
 
 import { Cards } from "./Cards";
-// import Carousel from "./Carousel";
+import Carousel2 from "./Carousel2";
 import Form from "./Form";
 import "./index.css";
 
@@ -44,7 +44,7 @@ const Posts = () => {
             />
           </form>
         ) : null}
-        {/* <Carousel /> */}
+        <Carousel2 />
       </section>
     </>
   );

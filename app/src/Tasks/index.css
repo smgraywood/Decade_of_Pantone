@@ -134,3 +134,35 @@ label{
   font-size: 30px;
   font-family:'Limelight', cursive;
 }
+.carousel-inner.item {
+  height: 500px;
+  width: auto;
+}
+
+.item {
+  border-radius: 30px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+}
+
+.album {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel-caption {
+  color: #fd7cf7;
+}
