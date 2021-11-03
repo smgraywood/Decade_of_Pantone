@@ -6,10 +6,10 @@ load_dotenv_if_exists();
 
 const db = initDb();
 
-export const getTasks = () => db.any("SELECT * FROM tasks");
+export const getPosts = () => db.any("SELECT * FROM posts");
 
-export const addTask = (name) =>
-  db.one("INSERT INTO tasks(name) VALUES($<name>) RETURNING *", { name });
+export const addPost = ({ color_name , release_year , image_url , image_description , instagram_handle }) =>
+  db.one("INSERT INTO posts(color_name , release_year , image_url , image_description , instagram_handle ) VALUES($<color_name>, $<release_year>, $<image_url>, $<image_description>, $<instagram_handle>) RETURNING *", { color_name , release_year , image_url , image_description , instagram_handle });
 
 function initDb() {
   let connection;

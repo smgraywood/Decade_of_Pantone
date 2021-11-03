@@ -3,15 +3,16 @@ import * as React from "react";
 import * as apiClient from "../apiClient";
 
 import { Cards } from "./Cards";
+// import Carousel from "./Carousel";
 import Form from "./Form";
 import "./index.css";
 
-const Tasks = () => {
-  const [tasks, setTasks] = React.useState([]);
+const Posts = () => {
+  const [posts, setPosts] = React.useState([]);
 
-  const loadTasks = async () => setTasks(await apiClient.getTasks());
-  const addPride = (task) => apiClient.addTask(task).then(loadTasks);
+  const loadPosts = async () => setPosts(await apiClient.getPosts());
   const addPost = (data) => {
+    apiClient.addPost(data).then(loadPosts);
     //place holder function to send data to API
     console.log(data);
   };
@@ -25,7 +26,7 @@ const Tasks = () => {
   };
 
   React.useEffect(() => {
-    loadTasks();
+    loadPosts();
   }, []);
 
   return (
@@ -37,12 +38,13 @@ const Tasks = () => {
         {showForm ? (
           <form className="pride_form">
             <AddPrideForm
-              addPride={addPride} // Find out what you this to do
+              // addPride={addPride} // Find out what you this to do
               addPost={addPost} //This function will add a post to our BE
               closeForm={closeForm} // will change the form value to open and close =>Function
             />
           </form>
         ) : null}
+        {/* <Carousel /> */}
       </section>
     </>
   );
@@ -68,7 +70,7 @@ const AddPrideForm = ({ addPride, addPost, closeForm }) => {
   return <Form closeForm={closeForm} addPost={addPost} />;
 };
 
-export default Tasks;
+export default Posts;
 
 //onClicks
 //onClick to change the background color

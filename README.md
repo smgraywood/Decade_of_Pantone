@@ -1,4 +1,67 @@
-# Starter Project With PostgreSQL, Express, and React
+# A Decade of Pantone
+
+<img src="https://raw.githubusercontent.com/smgraywood/Pantone/master/PantoneGIF.gif" width="300px">
+<br>
+<br>
+<br>
+<h3>Overview</h3>
+<hr>
+<br>
+A Decade of Pantone is a social media app that allows users to reflect on how Pantone's Color of the Year has influenced fashion and design both in society at large, and in their own lives and closets. Users can access social media tagged with that color by clicking on the color of their choice on the page or can upload a photo of a flat lay of an outfit featuring that color. 
+/* put a demo here*/
+<br>
+<br>
+<br>
+<h2>Techstack</h2>
+<hr>
+<br>
+
+*Languages*
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+<br>
+
+*Frameworks*
+
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+<br>
+<br>
+<br>
+<h2>Wireframes and User Stories</h2>
+<hr>
+<br>
+More information and details can be found on:
+
+<a href="https://trello.com/b/UQQEMjhN/a-decade-of-pantone-app">Trello</a>
+<br>
+<br>
+<br>
+Style Guide:
+<br>
+<br>
+<img src="https://raw.githubusercontent.com/smgraywood/Pantone/master/Style_Guide.png" width="300px">
+<br>
+Mockup:
+<br>
+<br>
+<img src="https://raw.githubusercontent.com/smgraywood/Pantone/master/Mockup.png" width="500px">
+<br>
+Data Model:
+<br>
+<br>
+<img src="https://raw.githubusercontent.com/smgraywood/Pantone/master/Schema.png" width="500px">
+<br>
+User Flow:
+<br>
+<br>
+<img src="https://raw.githubusercontent.com/smgraywood/Pantone/master/User Flow.png" width="300px">
+
+<!-- # Starter Project With PostgreSQL, Express, and React
 
 End-to-end React app backed by an Express API server, persisting data to
 PostgreSQL database. The project has a basic interface that fetches data from a
@@ -154,4 +217,4 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome! -->
