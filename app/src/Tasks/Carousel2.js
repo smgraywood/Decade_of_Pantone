@@ -14,22 +14,27 @@ const Carousel2 = ({ carouselData }) => {
 
 const CarouselCard = ({ cardInfo }) => {
   return (
-    <>
+    <div className="db_card_div">
       {/* Img div -> Left of side of card */}
-      <>
-        <p>{cardInfo.image_description}</p>
-      </>
+      <div className="db_left_side_card">
+        <h1 className="db_color_name">{cardInfo.color_name}</h1>
+        <br />
+        <p className="db_release_year">{cardInfo.release_year}</p>
+        <br />
+        <p className="db_image_description">{cardInfo.image_description}</p>
+        <br />
+        <p className="db_instagram_handle">{cardInfo.instagram_handle}</p>
+      </div>
       {/* Right side of card content */}
-      <>
-        {/* image_description , instagram_handle  */}
-        <h1>{cardInfo.color_name}</h1>
-        <p>{cardInfo.release_year}</p>
+      <div className="db_right_side_card">
+        <br />
         <img
+          className="db_image"
           src={cardInfo.image_url}
           alt="database info including year and description"
         />
-      </>
-    </>
+      </div>
+    </div>
   );
 };
 

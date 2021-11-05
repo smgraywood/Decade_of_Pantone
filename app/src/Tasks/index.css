@@ -1,138 +1,138 @@
-@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
 
-body{
-    background-color:#BDBBBB ;
+body {
+  background-color: #bdbbbb;
 }
-.title{
-    text-align: center;
-    margin: auto 0;
-    font-family:'Limelight', cursive;
-    font-size: 100px;
-    color:#FFF;
-    -webkit-text-stroke: .2px #000;
-    opacity: .9;
+.title {
+  text-align: center;
+  margin: auto 0;
+  font-family: "Limelight", cursive;
+  font-size: 100px;
+  color: #fff;
+  -webkit-text-stroke: 0.2px #000;
+  opacity: 0.9;
 }
 
-.card-wrapper{
-    display: flex;
-    margin: auto 0;
-    justify-content: center;
-  }
+.card-wrapper {
+  display: flex;
+  margin: auto 0;
+  justify-content: center;
+}
 
-#cardDimension{
+#cardDimension {
   height: 75px;
-  width: 98px;  
+  width: 98px;
 }
 
-  .top2011{
-    background-color: #CF5476;
-  }
-  .top2012{
-    background-color: #DD4124;
-  }
-  .top2013{
-    background-color: #009B77;
-  }
-  .top2014{
-    background-color: #B163A3;
-  }
-  .top2015{
-    background-color: #97504C;
-  }
-  .top2016_1{
-    background-color: #B3CEE5;
-  }
-  .top2016_2{
-    background-color: #f7cac9;
-  }
-  .top2017{
-    background-color: #88B04B;
-  }
-  .top2018{
-    background-color: #604c8d;
-  }
-  .top2019{
-    background-color: #ff6f61;
-  }
-  .top2020{
-    background-color: #34558b;
-  }
-  .top2021_1{
-    background-color: #959A9C;
-  }
-  .top2021_2{
-    background-color: #F5DF4D;
-  }
+.top2011 {
+  background-color: #cf5476;
+}
+.top2012 {
+  background-color: #dd4124;
+}
+.top2013 {
+  background-color: #009b77;
+}
+.top2014 {
+  background-color: #b163a3;
+}
+.top2015 {
+  background-color: #97504c;
+}
+.top2016_1 {
+  background-color: #b3cee5;
+}
+.top2016_2 {
+  background-color: #f7cac9;
+}
+.top2017 {
+  background-color: #88b04b;
+}
+.top2018 {
+  background-color: #604c8d;
+}
+.top2019 {
+  background-color: #ff6f61;
+}
+.top2020 {
+  background-color: #34558b;
+}
+.top2021_1 {
+  background-color: #959a9c;
+}
+.top2021_2 {
+  background-color: #f5df4d;
+}
 
-  .card{
-    border: solid 1px black;
-    width: 100px;
-    height:125px;
-    margin: 5px;
-    background-color: #FFF;
-  }
-  .card-text{
-      font-size: 10px;
-      background-color: #FFF;
-  }
-  .convo-wrapper{
-    margin: 10px auto;
-    justify-content: center;
-    text-align: center;
-    width: 350px;
-    height: 300px;
-    background-color: #FFF;
-    padding: 30px;
-    border-radius: 10px;
-    opacity: .9;
-    border: solid 1px black;
-  }
-  #convo-title{
-    font-family: 'Rouge Script', cursive;
-    font-size: 40px;
-    margin: 0px
-  }
-  #convo-paragraph{
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  #convo-button{
+.card {
+  border: solid 1px black;
+  width: 100px;
+  height: 125px;
+  margin: 5px;
+  background-color: #fff;
+}
+.card-text {
+  font-size: 10px;
+  background-color: #fff;
+}
+.convo-wrapper {
+  margin: 10px auto;
+  justify-content: center;
+  text-align: center;
+  width: 350px;
+  height: 300px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  opacity: 0.9;
+  border: solid 1px black;
+}
+#convo-title {
+  font-family: "Rouge Script", cursive;
+  font-size: 40px;
+  margin: 0px;
+}
+#convo-paragraph {
+  font-family: "Josefin Sans", sans-serif;
+}
+#convo-button {
   background-color: #000;
-  color:#FFF;
+  color: #fff;
   font-size: 20px;
-  font-family:'Limelight', cursive;
-  width:200px;
-  }
-  .pride_form{
-    justify-content: center;
-    padding: 25px;
-  }
-.form-wrapper{
+  font-family: "Limelight", cursive;
+  width: 200px;
+}
+.pride_form {
+  justify-content: center;
+  padding: 25px;
+}
+.form-wrapper {
   display: flex;
   text-align: center;
   margin: auto;
-  justify-content:center;
-  background-color: #FFF;
-  width: 350px; 
+  justify-content: center;
+  background-color: #fff;
+  width: 350px;
   height: 350px;
   border-radius: 10px;
-  opacity: .9;
+  opacity: 0.9;
   border: solid 1px black;
 }
-#form-title{
-  font-family: 'Rouge Script', cursive;
+#form-title {
+  font-family: "Rouge Script", cursive;
   font-size: 40px;
-  margin: 0px
+  margin: 0px;
 }
-label{
-  font-family: 'Josefin Sans', sans-serif;
+label {
+  font-family: "Josefin Sans", sans-serif;
 }
-#form-submit{
+#form-submit {
   background-color: #000;
-  color:#FFF;
+  color: #fff;
   font-size: 30px;
-  font-family:'Limelight', cursive;
+  font-family: "Limelight", cursive;
 }
 .carousel-inner.item {
   height: 500px;
@@ -165,4 +165,47 @@ label{
 
 .carousel-caption {
   color: #fd7cf7;
+}
+
+.db_card_div {
+  background-color: #000;
+  border: solid 5px #fff;
+  width:700px;
+  height:500px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.db_color_name {
+  display: flex;
+  color: #fff;
+  font-family: "Limelight", cursive;
+  font-size: 50px;
+}
+
+.db_release_year {
+  display: inline-block;
+  color: #fff;
+  font-family: "Limelight", cursive;
+  font-size: 40px;
+}
+
+.db_image_description {
+  display: inline-block;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 20px;
+}
+.db_image{
+  display: flex;
+  margin: auto 0;
+  justify-content: center;
+}
+
+.db_instagram_handle{
+  display: inline-block;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 30px;  
 }
