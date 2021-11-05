@@ -3,15 +3,34 @@ import React from "react";
 import { Carousel } from "3d-react-carousal";
 
 const Carousel2 = ({ carouselData }) => {
-  let slides = [
-    <img src="https://picsum.photos/800/300/?random" alt="1" />,
-    <img src="https://picsum.photos/800/301/?random" alt="2" />,
-    <img src="https://picsum.photos/800/302/?random" alt="3" />,
-    <img src="https://picsum.photos/800/303/?random" alt="4" />,
-    <img src="https://picsum.photos/800/304/?random" alt="5" />,
-  ];
+  console.log({ carouselData });
+  const slides = carouselData.map((carousel) => {
+    console.log({ carousel });
+    return <CarouselCard cardInfo={carousel} />;
+  });
 
   return <Carousel slides={slides} autoplay={false} interval={1000} />;
+};
+
+const CarouselCard = ({ cardInfo }) => {
+  return (
+    <>
+      {/* Img div -> Left of side of card */}
+      <>
+        <p>{cardInfo.image_description}</p>
+      </>
+      {/* Right side of card content */}
+      <>
+        {/* image_description , instagram_handle  */}
+        <h1>{cardInfo.color_name}</h1>
+        <p>{cardInfo.release_year}</p>
+        <img
+          src={cardInfo.image_url}
+          alt="database info including year and description"
+        />
+      </>
+    </>
+  );
 };
 
 export default Carousel2;

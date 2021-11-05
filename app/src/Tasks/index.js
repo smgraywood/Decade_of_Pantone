@@ -29,6 +29,12 @@ const Posts = () => {
     loadPosts();
   }, []);
 
+  React.useEffect(() => {
+    if (posts) {
+      console.log(posts);
+    }
+  }, [posts]);
+
   return (
     <>
       <h1 className="title">A Decade of Pantone</h1>
@@ -44,7 +50,7 @@ const Posts = () => {
             />
           </form>
         ) : null}
-        <Carousel2 />
+        {posts && <Carousel2 carouselData={posts} />}
       </section>
     </>
   );
@@ -66,7 +72,7 @@ const JoinConvo = ({ openForm }) => {
     </>
   );
 };
-const AddPrideForm = ({ addPride, addPost, closeForm }) => {
+const AddPrideForm = ({ addPost, closeForm }) => {
   return <Form closeForm={closeForm} addPost={addPost} />;
 };
 
