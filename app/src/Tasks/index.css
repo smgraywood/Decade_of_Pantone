@@ -167,6 +167,14 @@ label {
   color: #fd7cf7;
 }
 
+.db_left_side_card{
+  width: 350px;
+}
+
+.db_right_side_card{
+  width: 350px;
+}
+
 .db_card_div {
   background-color: #000;
   border: solid 5px #fff;
@@ -201,6 +209,7 @@ label {
   display: flex;
   margin: auto 0;
   justify-content: center;
+  width: 300px;
 }
 
 .db_instagram_handle{
