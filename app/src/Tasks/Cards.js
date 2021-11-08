@@ -3,7 +3,7 @@ import React from "react";
 function Cards() {
   return (
     <section className="card-wrapper">
-      <div>
+      <button>
         <div className="card">
           <div className="top2011" id="cardDimension"></div>
           <div className="card-text">
@@ -11,9 +11,9 @@ function Cards() {
             2011
           </div>
         </div>
-      </div>
+      </button>
 
-      <div>
+      <button>
         <div className="card">
           <div className="top2012" id="cardDimension"></div>
           <div className="card-text">
@@ -21,8 +21,8 @@ function Cards() {
             2012
           </div>
         </div>
-      </div>
-      <div>
+      </button>
+      <button>
         <div className="card">
           <div className="top2013" id="cardDimension"></div>
           <div className="card-text">
@@ -30,8 +30,8 @@ function Cards() {
             2013
           </div>
         </div>
-      </div>
-      <div>
+      </button>
+      <button>
         <div className="card">
           <div className="top2014" id="cardDimension"></div>
           <div className="card-text">
@@ -39,8 +39,8 @@ function Cards() {
             2014
           </div>
         </div>
-      </div>
-      <div>
+      </button>
+      <button>
         <div className="card">
           <div className="top2015" id="cardDimension"></div>
           <div className="card-text">
@@ -48,8 +48,8 @@ function Cards() {
             2015
           </div>
         </div>
-      </div>
-      <div>
+      </button>
+      <button>
         <div className="card">
           <div className="top2016_1" id="cardDimension"></div>
           <div className="card-text">
@@ -57,8 +57,8 @@ function Cards() {
             2016
           </div>
         </div>
-      </div>
-      <div>
+      </button>
+      <button>
         <div className="card">
           <div className="top2016_2" id="cardDimension"></div>
           <div className="card-text">
@@ -66,8 +66,8 @@ function Cards() {
             2016
           </div>
         </div>
-      </div>
-      <div>
+      </button>
+      <button>
         <div className="card">
           <div className="top2017" id="cardDimension"></div>
           <div className="card-text">
@@ -75,8 +75,8 @@ function Cards() {
             2017
           </div>
         </div>
-      </div>
-      <div>
+      </button>
+      <button>
         <div className="card">
           <div className="top2018" id="cardDimension"></div>
           <div className="card-text">
@@ -84,8 +84,8 @@ function Cards() {
             2018
           </div>
         </div>
-      </div>
-      <div>
+      </button>
+      <button>
         <div className="card">
           <div className="top2019" id="cardDimension"></div>
           <div className="card-text">
@@ -93,8 +93,8 @@ function Cards() {
             2019
           </div>
         </div>
-      </div>
-      <div>
+      </button>
+      <button>
         <div className="card">
           <div className="top2020" id="cardDimension"></div>
           <div className="card-text">
@@ -102,8 +102,8 @@ function Cards() {
             2020
           </div>
         </div>
-      </div>
-      <div>
+      </button>
+      <button>
         <div className="card">
           <div className="top2021_1" id="cardDimension"></div>
           <div className="card-text">
@@ -111,8 +111,8 @@ function Cards() {
             2021
           </div>
         </div>
-      </div>
-      <div>
+      </button>
+      <button>
         <div className="card">
           <div className="top2021_2" id="cardDimension"></div>
           <div className="card-text">
@@ -120,7 +120,7 @@ function Cards() {
             2021
           </div>
         </div>
-      </div>
+      </button>
     </section>
   );
 }
