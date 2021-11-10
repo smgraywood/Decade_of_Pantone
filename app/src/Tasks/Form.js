@@ -89,7 +89,7 @@ const Form = ({ Post, addPost, closeForm }) => {
         </label>{" "}
         <br />
         <label>
-          Instagram Handle:{" "}
+          Twitter Handle:{" "}
           <input
             type="text"
             name="instagram_handle"

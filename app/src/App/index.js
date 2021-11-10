@@ -8,14 +8,14 @@ import styles from "./styles.module.scss";
 
 const App = () => (
   <>
-    <header>
-      <nav className={styles.nav}>
+    {/* <header>
+      {/* <nav className={styles.nav}>
         <NavLink to="/" end>
           Home
         </NavLink>{" "}
         | <NavLink to="dashboard">Dashboard</NavLink>
-      </nav>
-    </header>
+      </nav> 
+    </header> */}
     <main>
       <Routes>
         <Route path="/" element={<Home />} />

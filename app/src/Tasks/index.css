@@ -21,6 +21,10 @@ body {
   justify-content: center;
 }
 
+.card-button{
+  background-color: transparent;
+  border: transparent;
+}
 #cardDimension {
   height: 75px;
   width: 98px;
@@ -134,41 +138,11 @@ label {
   font-size: 30px;
   font-family: "Limelight", cursive;
 }
-.carousel-inner.item {
-  height: 500px;
-  width: auto;
-}
-
-.item {
-  border-radius: 30px;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 300px;
-  width: 300px;
-}
-
-.album {
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.carousel-caption {
-  color: #fd7cf7;
-}
 
 .db_left_side_card{
   width: 350px;
+  justify-content: center;
+  align-items: center;
 }
 
 .db_right_side_card{
@@ -217,4 +191,159 @@ label {
   color: #fff;
   font-family: "Josefin Sans", sans-serif;
   font-size: 30px;  
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .title {
+    text-align: center;
+    margin: auto;
+    font-family: "Limelight", cursive;
+    font-size: 40px;
+    color: #fff;
+    -webkit-text-stroke: 0.2px #000;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.card-wrapper {
+  display: grid;
+  margin: auto 10px;
+  padding: 30px;
+  grid-template-columns: 170px 170px;
+  grid-template-rows: 170px 170px;
+  justify-items: center;
+  align-items: center;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+#cardDimension {
+  height: 100px;
+  width: 120px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.card {
+  border: solid 1px black;
+  width: 122px;
+  height: 150px;
+  margin: 5px;
+  background-color: #fff;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.convo-wrapper {
+  margin: 10px auto;
+  justify-content: center;
+  text-align: center;
+  width: 250px;
+  height: 200px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  opacity: 0.9;
+  border: solid 1px black;
+  margin-bottom: 50px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #convo-title {
+    font-family: "Rouge Script", cursive;
+    font-size: 20px;
+    margin: 0px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+#convo-paragraph {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 12px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+#convo-button {
+  background-color: #000;
+  color: #fff;
+  font-size: 10px;
+  font-family: "Limelight", cursive;
+  width: 100px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.db_card_div {
+  background-color: #000;
+  border: solid 5px #fff;
+  width:300px;
+  height:200px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.db_color_name {
+  display: flex;
+  color: #fff;
+  font-family: "Limelight", cursive;
+  font-size: 20px;
+  margin: 5px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.db_release_year {
+  display: inline-block;
+  color: #fff;
+  font-family: "Limelight", cursive;
+  font-size: 20px;
+  margin: 0px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.db_image_description {
+  display: inline-block;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 10px;
+  margin: 0px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.db_instagram_handle{
+  display: inline-block;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;  
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.db_image{
+  display: flex;
+  margin: auto 0;
+  justify-content: center;
+  height: 150px;
+}
 }
