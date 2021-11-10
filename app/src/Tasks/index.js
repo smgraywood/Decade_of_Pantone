@@ -1,13 +1,18 @@
 import * as React from "react";
 
+import Twitter from "twitter-lite";
+
 import * as apiClient from "../apiClient";
 
-import { Cards } from "./Cards";
+import Cards from "./Cards";
 import Carousel2 from "./Carousel2";
 import Form from "./Form";
+
 import "./index.css";
 
 const Posts = () => {
+  const [bgColor, setBgColor] = React.useState("");
+  console.log(bgColor);
   const [posts, setPosts] = React.useState([]);
 
   const loadPosts = async () => setPosts(await apiClient.getPosts());
@@ -15,6 +20,25 @@ const Posts = () => {
     apiClient.addPost(data).then(loadPosts);
     //place holder function to send data to API
     console.log(data);
+  };
+
+  // two params => Hashtag -> "Taco" url=
+  const fetchTweets = () => {
+    let hashTag = "greenery";
+    const client = new Twitter({
+      consumer_key: process.env.API_KEY, // from Twitter.//Api key
+      consumer_secret: process.env.API_KEY_SECRET, // from Twitter.
+      access_token_key: process.env.BEARER, //twitterAPI.accessTokenKey, // from your User (oauth_token)
+      access_token_secret: process.env.API_KEY_SECRET, //twitterAPI.accessTokenSecret// from your User (oauth_token_secret)
+    });
+    let twitterUrl = `search/tweets`;
+
+    client
+      .get(twitterUrl, { q: hashTag })
+      .then((results) => {
+        console.log("results", results);
+      })
+      .catch(console.error);
   };
 
   const [showForm, setShowForm] = React.useState(false);
@@ -36,10 +60,11 @@ const Posts = () => {
   }, [posts]);
 
   return (
-    <>
+    <div style={{ backgroundColor: bgColor }}>
       <h1 className="title">A Decade of Pantone</h1>
+      {/* <button onClick={() => fetchTweets()}> TACO</button> */}
       <section>
-        <Cards />
+        <Cards bgColor={bgColor} setBgColor={setBgColor} />
         <JoinConvo openForm={openForm} />
         {showForm ? (
           <form className="pride_form">
@@ -52,7 +77,7 @@ const Posts = () => {
         ) : null}
         {posts && <Carousel2 carouselData={posts} />}
       </section>
-    </>
+    </div>
   );
 };
 const JoinConvo = ({ openForm }) => {
