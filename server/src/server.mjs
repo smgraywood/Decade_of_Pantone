@@ -2,7 +2,6 @@ import express from "express";
 import mime from "mime-types";
 
 import postRouter from "./postRouter.mjs";
-
 const app = express();
 
 app.use("/api/posts", postRouter);
