@@ -4,7 +4,7 @@ const ColorCard = ({ colorCardData }) => {
   return (
     <>
       {colorCardData.map((c, index) => (
-        <div className="API_card_wrapper">
+        <section className="API_card_wrapper">
           <div className="API_card">
             <div
               id="cardDimension"
@@ -13,11 +13,12 @@ const ColorCard = ({ colorCardData }) => {
                 width: "98px",
               }}
               key={`${index}`}
-            >
-              <p></p>
+            ></div>
+            <div className="card-text">
+              rgb({c[0]}, {c[1]}, {c[2]})
             </div>
           </div>
-        </div>
+        </section>
       ))}
     </>
   );
