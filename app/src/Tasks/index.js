@@ -1,19 +1,18 @@
 import * as React from "react";
 
-import Twitter from "twitter-lite";
-
 import * as apiClient from "../apiClient";
 
 import Cards from "./Cards";
 import Carousel2 from "./Carousel2";
+import ColorCard from "./ColorCard";
 import Form from "./Form";
 
 import "./index.css";
 
 const Posts = () => {
   const [bgColor, setBgColor] = React.useState("");
-  console.log(bgColor);
   const [posts, setPosts] = React.useState([]);
+  const [colorCardData, setColorCardData] = React.useState([]);
 
   const loadPosts = async () => setPosts(await apiClient.getPosts());
   const addPost = (data) => {
@@ -23,23 +22,64 @@ const Posts = () => {
   };
 
   // two params => Hashtag -> "Taco" url=
-  const fetchTweets = () => {
-    let hashTag = "greenery";
-    const client = new Twitter({
-      consumer_key: process.env.API_KEY, // from Twitter.//Api key
-      consumer_secret: process.env.API_KEY_SECRET, // from Twitter.
-      access_token_key: process.env.BEARER, //twitterAPI.accessTokenKey, // from your User (oauth_token)
-      access_token_secret: process.env.API_KEY_SECRET, //twitterAPI.accessTokenSecret// from your User (oauth_token_secret)
-    });
-    let twitterUrl = `search/tweets`;
+  // const fetchTweets = () => {
+  //   let hashTag = "greenery";
+  //   const client = new Twitter({
+  //     consumer_key: process.env.API_KEY, // from Twitter.//Api key
+  //     consumer_secret: process.env.API_KEY_SECRET, // from Twitter.
+  //     access_token_key: process.env.BEARER, //twitterAPI.accessTokenKey, // from your User (oauth_token)
+  //     access_token_secret: process.env.API_KEY_SECRET, //twitterAPI.accessTokenSecret// from your User (oauth_token_secret)
+  //   });
+  //   let twitterUrl = `search/tweets`;
 
-    client
-      .get(twitterUrl, { q: hashTag })
-      .then((results) => {
-        console.log("results", results);
+  //   client
+  //     .get(twitterUrl, { q: hashTag })
+  //     .then((results) => {
+  //       console.log("results", results);
+  //     })
+  //     .catch(console.error);
+  // };
+
+  // var http = new XMLHttpRequest();
+  // http.onreadystatechange = function () {
+  //   if (http.readyState === 4 && http.status == 200) {
+  //     var palette = JSON.parse(http.responseText).result;
+  //   }
+  // };
+  const fetchColorData = () => {
+    let url = "http://colormind.io/api/";
+    let data = { model: "default" };
+    fetch(url, {
+      method: "POST",
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+        setColorCardData(data.result);
       })
-      .catch(console.error);
+      .catch((error) => {
+        // handle the error
+        console.log(error);
+      });
   };
+
+  // http.open("POST", url, true);
+  // http.send(JSON.stringify(data))
+
+  // [[42, 41, 48], [90, 83, 84], [191, 157, 175], [188, 138, 125], [215, 170, 66]]
+  // note that the input colors have changed as well, by a small amount
+
+  // curl 'http://colormind.io/api/' --data-binary '{"model":"default"}'
+  // };
+  // fetch(url)
+  // .then(response => response.json())
+  // .then(data => {
+  //   console.log(data)
+
+  //   let c = new Image();
+  //   c.src = data.url;
+  //   colorAPI.appendChild(c)
 
   const [showForm, setShowForm] = React.useState(false);
   const openForm = () => {
@@ -76,6 +116,15 @@ const Posts = () => {
           </form>
         ) : null}
         {posts && <Carousel2 carouselData={posts} />}
+        <br />
+        <br />
+        <div>
+          {" "}
+          <button className="fetch-API-button" onClick={() => fetchColorData()}>
+            I Need More Color!
+          </button>
+        </div>
+        <ColorCard colorCardData={colorCardData} />
       </section>
     </div>
   );
