@@ -22,7 +22,7 @@ const Posts = () => {
   };
 
   const fetchColorData = () => {
-    let url = "http://colormind.io/api/";
+    let url = "https://colormind.io/api/";
     let data = { model: "default" };
     fetch(url, {
       method: "POST",
