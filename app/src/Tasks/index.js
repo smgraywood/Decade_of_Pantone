@@ -26,6 +26,7 @@ const Posts = () => {
     let data = { model: "default" };
     fetch(url, {
       method: "POST",
+      response: "no-cors",
       body: JSON.stringify(data),
     })
       .then((response) => response.json())
