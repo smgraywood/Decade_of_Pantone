@@ -3,8 +3,8 @@ import * as React from "react";
 const ColorCard = ({ colorCardData }) => {
   return (
     <>
-      {colorCardData.map((c, index) => (
-        <span className="API_wrapper-wrapper">
+      <span className="API_wrapper-wrapper">
+        {colorCardData.map((c, index) => (
           <div className="API_card_wrapper">
             <div className="API_card">
               <div
@@ -19,8 +19,8 @@ const ColorCard = ({ colorCardData }) => {
               </div>
             </div>
           </div>
-        </span>
-      ))}
+        ))}
+      </span>
     </>
   );
 };
