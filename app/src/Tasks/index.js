@@ -21,31 +21,6 @@ const Posts = () => {
     console.log(data);
   };
 
-  // two params => Hashtag -> "Taco" url=
-  // const fetchTweets = () => {
-  //   let hashTag = "greenery";
-  //   const client = new Twitter({
-  //     consumer_key: process.env.API_KEY, // from Twitter.//Api key
-  //     consumer_secret: process.env.API_KEY_SECRET, // from Twitter.
-  //     access_token_key: process.env.BEARER, //twitterAPI.accessTokenKey, // from your User (oauth_token)
-  //     access_token_secret: process.env.API_KEY_SECRET, //twitterAPI.accessTokenSecret// from your User (oauth_token_secret)
-  //   });
-  //   let twitterUrl = `search/tweets`;
-
-  //   client
-  //     .get(twitterUrl, { q: hashTag })
-  //     .then((results) => {
-  //       console.log("results", results);
-  //     })
-  //     .catch(console.error);
-  // };
-
-  // var http = new XMLHttpRequest();
-  // http.onreadystatechange = function () {
-  //   if (http.readyState === 4 && http.status == 200) {
-  //     var palette = JSON.parse(http.responseText).result;
-  //   }
-  // };
   const fetchColorData = () => {
     let url = "http://colormind.io/api/";
     let data = { model: "default" };
