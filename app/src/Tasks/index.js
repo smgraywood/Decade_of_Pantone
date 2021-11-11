@@ -1,19 +1,18 @@
 import * as React from "react";
 
-import Twitter from "twitter-lite";
-
 import * as apiClient from "../apiClient";
 
 import Cards from "./Cards";
 import Carousel2 from "./Carousel2";
+import ColorCard from "./ColorCard";
 import Form from "./Form";
 
 import "./index.css";
 
 const Posts = () => {
   const [bgColor, setBgColor] = React.useState("");
-  console.log(bgColor);
   const [posts, setPosts] = React.useState([]);
+  const [colorCardData, setColorCardData] = React.useState([]);
 
   const loadPosts = async () => setPosts(await apiClient.getPosts());
   const addPost = (data) => {
@@ -41,36 +40,46 @@ const Posts = () => {
   //     .catch(console.error);
   // };
 
-    var url = "http://colormind.io/api/";
-    var data = {
-      model: "default",
-      input: [[44, 43, 44], [90, 83, 82], "N", "N", "N"],
-    };
-
-    var http = new XMLHttpRequest();
-    http.onreadystatechange = function () {
-      if (http.readyState === 4 && http.status == 200) {
-        var palette = JSON.parse(http.responseText).result;
-      }
-    };
-
-    http.open("POST", url, true);
-    http.send(JSON.stringify(data))
-
-    // [[42, 41, 48], [90, 83, 84], [191, 157, 175], [188, 138, 125], [215, 170, 66]]
-    // note that the input colors have changed as well, by a small amount
-
-      // curl 'http://colormind.io/api/' --data-binary '{"model":"default"}'
+  // var http = new XMLHttpRequest();
+  // http.onreadystatechange = function () {
+  //   if (http.readyState === 4 && http.status == 200) {
+  //     var palette = JSON.parse(http.responseText).result;
+  //   }
+  // };
+  const fetchColorData = () => {
+    let url = "http://colormind.io/api/";
+    let data = { model: "default" };
+    fetch(url, {
+      method: "POST",
+      body: JSON.stringify(data),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Success:", data);
+        setColorCardData(data.result);
+      })
+      .catch((error) => {
+        // handle the error
+        console.log(error);
+      });
   };
-fetch(url)
-.then(response => response.json())
-.then(data => {
-  console.log(data) 
 
-  let c = new Image();
-  c.src = data.url;
-  colorAPI.appendChild(c)
+  // http.open("POST", url, true);
+  // http.send(JSON.stringify(data))
 
+  // [[42, 41, 48], [90, 83, 84], [191, 157, 175], [188, 138, 125], [215, 170, 66]]
+  // note that the input colors have changed as well, by a small amount
+
+  // curl 'http://colormind.io/api/' --data-binary '{"model":"default"}'
+  // };
+  // fetch(url)
+  // .then(response => response.json())
+  // .then(data => {
+  //   console.log(data)
+
+  //   let c = new Image();
+  //   c.src = data.url;
+  //   colorAPI.appendChild(c)
 
   const [showForm, setShowForm] = React.useState(false);
   const openForm = () => {
@@ -107,7 +116,15 @@ fetch(url)
           </form>
         ) : null}
         {posts && <Carousel2 carouselData={posts} />}
-        <div id="colorAPI" />
+        <br />
+        <br />
+        <div>
+          {" "}
+          <button className="fetch-API-button" onClick={() => fetchColorData()}>
+            I Need More Color!
+          </button>
+        </div>
+        <ColorCard colorCardData={colorCardData} />
       </section>
     </div>
   );

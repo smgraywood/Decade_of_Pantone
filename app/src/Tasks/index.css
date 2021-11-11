@@ -193,6 +193,39 @@ label {
   font-size: 30px;  
 }
 
+.fetch-API-button{
+  background-color: #000;
+  color: #fff;
+  font-size: 60px;
+  font-family: "Limelight", cursive;
+  width: 600px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border: solid 1px #FFF;
+}
+
+.API_card_wrapper{
+  display: inline-flex;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  align-items: center;
+}
+.API_card{
+  display: inline-flex;
+  justify-content: center;
+  border: solid 1px black;
+  width: 100px;
+  height: 125px;
+  margin: auto 10px;
+  background-color: #fff;
+  text-align: center;
+  align-items: center;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .title {
@@ -345,5 +378,20 @@ label {
   margin: auto 0;
   justify-content: center;
   height: 150px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.fetch-API-button{
+  background-color: #000;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Limelight", cursive;
+  width: 200px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border: solid 1px #FFF;
 }
 }
