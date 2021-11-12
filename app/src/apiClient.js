@@ -1,11 +1,12 @@
-export const getPosts = () => _get("/api/posts");
-export const getTweets = (url) => _get(url);
-export const addPost = (name) => _post("/api/posts", { name });
+import _fetch from "isomorphic-fetch";
 
-const _get = async (url) => (await fetch(url)).json();
+export const getPosts = () => _get("/api/posts");
+export const addPost = (name) => _post("/api/posts", { name });
+export const fetchColorData = () => _get("/api/colors");
+const _get = async (url) => (await _fetch(url)).json();
 
 const _post = async (url, body) => {
-  const response = await fetch(url, {
+  const response = await _fetch(url, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(body),

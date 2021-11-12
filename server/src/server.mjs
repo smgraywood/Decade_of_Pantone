@@ -1,10 +1,17 @@
 import express from "express";
 import mime from "mime-types";
-
+import  fetchColorData  from "./colorAPI.mjs";
 import postRouter from "./postRouter.mjs";
 const app = express();
 
 app.use("/api/posts", postRouter);
+
+
+app.get("/api/colors", async (request, response) => {
+ let data = await fetchColorData() 
+ console.log(data);
+  return response.json(data);
+});
 
 // Do not comment out or delete this end point. The React development server
 // won't start until it pings this end point successfully.
@@ -31,3 +38,4 @@ const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.info(`Example server listening at http://localhost:${port}`);
 });
+//someething to commit

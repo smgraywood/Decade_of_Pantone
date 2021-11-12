@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { Routes, Route, NavLink } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 import Tasks from "../Tasks";
 
@@ -8,14 +8,6 @@ import styles from "./styles.module.scss";
 
 const App = () => (
   <>
-    {/* <header>
-      {/* <nav className={styles.nav}>
-        <NavLink to="/" end>
-          Home
-        </NavLink>{" "}
-        | <NavLink to="dashboard">Dashboard</NavLink>
-      </nav> 
-    </header> */}
     <main>
       <Routes>
         <Route path="/" element={<Home />} />

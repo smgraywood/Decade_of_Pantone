@@ -24,6 +24,7 @@ body {
 .card-button{
   background-color: transparent;
   border: transparent;
+  cursor: pointer;
 }
 #cardDimension {
   height: 75px;
@@ -203,27 +204,50 @@ label {
   margin: auto;
   justify-content: center;
   border: solid 1px #FFF;
+  cursor: pointer;
 }
 
-.API_card_wrapper{
-  display: inline-flex;
-  margin: auto;
-  justify-content: center;
+.API_wrapper-wrapper{
   text-align: center;
-  margin: auto;
-  margin-top: 30px;
+  margin-top: 15px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.API_card{
+
+/* .API_card_wrapper{
+  text-align: center;
+  margin-top: 15px;
+  margin: 15px auto;
   display: inline-flex;
   justify-content: center;
+  align-items: center;
+} */
+
+.API_card_wrapper{
+  display: grid;
+  margin: auto 0px;
+  margin-top: 30px;
+  padding: 0px;
+  grid-template-columns: 170px;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#API_card_dimension{
+  height: 75px;
+  width: 98px;
+}
+
+.API_card{
   border: solid 1px black;
   width: 100px;
   height: 125px;
-  margin: auto 10px;
+  margin: 5px;
   background-color: #fff;
-  text-align: center;
-  align-items: center;
 }
 
 @media only screen and (max-width: 768px) {
@@ -324,7 +348,7 @@ label {
   display: flex;
   margin: auto;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 }
 
@@ -383,6 +407,14 @@ label {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+.react-3d-carousel{
+ height: 10px;
+ background: transparent;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
 .fetch-API-button{
   background-color: #000;
   color: #fff;
@@ -393,5 +425,48 @@ label {
   margin: auto;
   justify-content: center;
   border: solid 1px #FFF;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.API_card_wrapper-wrapper{
+  text-align: center;
+  margin-top: 15px;
+  margin: auto 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.API_card_wrapper{
+  text-align: center;
+  margin-top: 15px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.API_card{
+  border: solid 1px black;
+  width: 75px;
+  height: 100px;
+  margin: 5px;
+  background-color: #fff;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+#API_card_dimension{
+  height: 60px;
+  width: 73px;
 }
 }
