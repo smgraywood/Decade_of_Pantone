@@ -348,7 +348,7 @@ label {
   display: flex;
   margin: auto;
   justify-content: center;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 }
 
@@ -407,6 +407,14 @@ label {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+.react-3d-carousel{
+ height: 10px;
+ background: transparent;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
 .fetch-API-button{
   background-color: #000;
   color: #fff;
@@ -422,16 +430,25 @@ label {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-.API_card_wrapper{
-  display: grid;
+.API_card_wrapper-wrapper{
+  text-align: center;
+  margin-top: 15px;
   margin: auto 15px;
-  margin-top: 30px;
-  padding: 0px;
-  grid-template-columns: 25px 25px;
-  grid-template-rows: 50px 50px;
-  justify-items: center;
-  align-items: center;
+  display: flex;
   justify-content: center;
+  align-items: center;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.API_card_wrapper{
+  text-align: center;
+  margin-top: 15px;
+  margin: 15px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 }
 

@@ -1,6 +1,9 @@
 import * as React from "react";
 
+import * as apiClient from "../apiClient";
+
 const ColorCard = ({ colorCardData }) => {
+  console.log(colorCardData);
   return (
     <>
       <span className="API_wrapper-wrapper">

@@ -3,9 +3,9 @@ import React from "react";
 import { Carousel } from "3d-react-carousal";
 
 const Carousel2 = ({ carouselData }) => {
-  console.log({ carouselData });
+  // console.log({ carouselData });
   const slides = carouselData.map((carousel) => {
-    console.log({ carousel });
+    // console.log({ carousel });
     return <CarouselCard cardInfo={carousel} />;
   });
 

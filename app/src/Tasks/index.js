@@ -18,43 +18,14 @@ const Posts = () => {
   const addPost = (data) => {
     apiClient.addPost(data).then(loadPosts);
     //place holder function to send data to API
-    console.log(data);
+    // console.log(data);
   };
 
-  const fetchColorData = () => {
-    let url = "http://colormind.io/api/";
-    let data = { model: "default" };
-    fetch(url, {
-      method: "POST",
-      body: JSON.stringify(data),
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Success:", data);
-        setColorCardData(data.result);
-      })
-      .catch((error) => {
-        // handle the error
-        console.log(error);
-      });
+  // let APIData = async () => (await apiClient.fetchColorData());
+  const getColorData = async () => {
+    setColorCardData(await apiClient.fetchColorData());
+    console.log(colorCardData);
   };
-
-  // http.open("POST", url, true);
-  // http.send(JSON.stringify(data))
-
-  // [[42, 41, 48], [90, 83, 84], [191, 157, 175], [188, 138, 125], [215, 170, 66]]
-  // note that the input colors have changed as well, by a small amount
-
-  // curl 'http://colormind.io/api/' --data-binary '{"model":"default"}'
-  // };
-  // fetch(url)
-  // .then(response => response.json())
-  // .then(data => {
-  //   console.log(data)
-
-  //   let c = new Image();
-  //   c.src = data.url;
-  //   colorAPI.appendChild(c)
 
   const [showForm, setShowForm] = React.useState(false);
   const openForm = () => {
@@ -70,7 +41,6 @@ const Posts = () => {
 
   React.useEffect(() => {
     if (posts) {
-      console.log(posts);
     }
   }, [posts]);
 
@@ -95,7 +65,7 @@ const Posts = () => {
         <br />
         <div>
           {" "}
-          <button className="fetch-API-button" onClick={() => fetchColorData()}>
+          <button className="fetch-API-button" onClick={() => getColorData()}>
             I Need More Color!
           </button>
         </div>
