@@ -10,10 +10,7 @@ const ColorCard = ({ setBgColor, bgColor, colorCardData }) => {
   };
   return (
     <>
-      <span
-        className="API_wrapper-wrapper"
-        onUpdate={window.scrollTo(1500, 1500)}
-      >
+      <span className="API_wrapper-wrapper">
         {colorCardData.map((c, index) => (
           <div className="API_card_wrapper">
             <div className="API_card">
