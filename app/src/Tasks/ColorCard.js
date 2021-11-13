@@ -18,6 +18,7 @@ const ColorCard = ({ setBgColor, bgColor, colorCardData }) => {
           <div className="API_card_wrapper">
             <div className="API_card">
               <button
+                className="API-card-button"
                 onClick={(e) => colorChange(e, `rgb(${c[0]}, ${c[1]}, ${c[2]}`)}
                 id="API_card_dimension"
                 style={{

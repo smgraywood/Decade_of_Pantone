@@ -272,6 +272,10 @@ a:visited {
   background-color: #fff;
 }
 
+.API-card-button{
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .title {
