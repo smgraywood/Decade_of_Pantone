@@ -280,7 +280,7 @@ a:visited {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
   .title {
     text-align: center;
@@ -292,7 +292,7 @@ a:visited {
     -webkit-text-stroke: 0.2px #000;
   }
 }
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .card-wrapper {
   display: grid;
@@ -305,7 +305,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 #cardDimension {
   height: 100px;
@@ -313,7 +313,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .card {
   border: solid 1px black;
@@ -324,7 +324,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 #extra-card {
   justify-content: center;
@@ -334,7 +334,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .convo-wrapper {
   margin: 10px auto;
@@ -351,7 +351,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
   #convo-title {
     font-family: "Rouge Script", cursive;
@@ -360,7 +360,7 @@ a:visited {
   }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 #convo-paragraph {
   font-family: "Josefin Sans", sans-serif;
@@ -368,7 +368,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 #convo-button {
   background-color: #000;
@@ -379,7 +379,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .db_card_div {
   background-color: #000;
@@ -393,7 +393,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .db_color_name {
   display: flex;
@@ -404,7 +404,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .db_release_year {
   display: inline-block;
@@ -415,7 +415,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .db_image_description {
   display: inline-block;
@@ -426,7 +426,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .db_instagram_handle{
   display: inline-block;
@@ -436,7 +436,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .db_image{
   display: flex;
@@ -446,7 +446,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .react-3d-carousel{
  height: 10px;
@@ -454,7 +454,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .fetch-API-button{
   background-color: #000;
@@ -469,7 +469,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .API-instruction{
   background-color: #fff;
@@ -488,7 +488,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .API_card_wrapper-wrapper{
   text-align: center;
@@ -500,7 +500,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .API_card_wrapper{
   text-align: center;
@@ -512,7 +512,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 .API_card{
   border: solid 1px black;
@@ -523,7 +523,7 @@ a:visited {
 }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1500px) {
   /* For mobile phones: */
 #API_card_dimension{
   height: 60px;
