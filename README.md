@@ -12,8 +12,9 @@ A Decade of Pantone is a social media app that allows users to reflect on how Pa
 <br>
 <br>
 <br>
-## Running Locally
-
+<h3>Running Locally</h3>
+<hr>
+<br>
 1. Install & run <a href='https://www.docker.com/'>Docker</a>
 2. Fork & clone this repo
 3. In your CLI, from the root directory, run `npm install`
