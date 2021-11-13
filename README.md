@@ -68,7 +68,7 @@ User Flow:
 
 <td align="center"><a href="https://github.com/mvargasvega"><img src="https://avatars.githubusercontent.com/u/29615926?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Martin Vargas Vega</b></sub></a><br /></a>💻💬👀</td>
 
-<td align="center"><a href="https://github.com/nbrengle"><img src="https://avatars.githubusercontent.com/u/3836628?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nate Mooney</b></sub></a><br /></a>💻📖🚇🚧</td>
+<td align="center"><a href="https://github.com/nbrengle"><img src="https://avatars.githubusercontent.com/u/3836628?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Nate Mooney</b></sub></a><br /></a>💻💬👀</td>
 
 <td align="center"><a href="https://github.com/ZelmaSedano"><img src="https://avatars.githubusercontent.com/u/55029831?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Zelma Sedano</b></sub></a><br /></a>💻💬</td>
 <td align="center"><a href="https://github.com/tabbykatz"><img src="https://avatars.githubusercontent.com/u/55110763?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Tabitha O'Melay</b></sub></a><br /></a>💻💬</td>
