@@ -2,21 +2,29 @@ import * as React from "react";
 
 import * as apiClient from "../apiClient";
 
-const ColorCard = ({ colorCardData }) => {
-  console.log(colorCardData);
+const ColorCard = ({ setBgColor, bgColor, colorCardData }) => {
+  const colorChange = (e, color) => {
+    e.preventDefault();
+    console.log("button clicked");
+    setBgColor(color);
+  };
   return (
     <>
-      <span className="API_wrapper-wrapper">
+      <span
+        className="API_wrapper-wrapper"
+        onUpdate={window.scrollTo(1500, 1500)}
+      >
         {colorCardData.map((c, index) => (
           <div className="API_card_wrapper">
             <div className="API_card">
-              <div
+              <button
+                onClick={(e) => colorChange(e, `rgb(${c[0]}, ${c[1]}, ${c[2]}`)}
                 id="API_card_dimension"
                 style={{
                   backgroundColor: `rgb(${c[0]}, ${c[1]}, ${c[2]}`,
                 }}
                 key={`${index}`}
-              ></div>
+              ></button>
               <div className="card-text">
                 rgb({c[0]}, {c[1]}, {c[2]})
               </div>

@@ -11,9 +11,10 @@ import "./index.css";
 
 const Posts = () => {
   const [bgColor, setBgColor] = React.useState("");
+  // const [bgColor1, setBgColor1] = React.useState("");
+  console.log(bgColor);
   const [posts, setPosts] = React.useState([]);
   const [colorCardData, setColorCardData] = React.useState([]);
-
   const loadPosts = async () => setPosts(await apiClient.getPosts());
   const addPost = (data) => {
     apiClient.addPost(data).then(loadPosts);
@@ -63,6 +64,11 @@ const Posts = () => {
         {posts && <Carousel2 carouselData={posts} />}
         <br />
         <br />
+        <ColorCard
+          colorCardData={colorCardData}
+          bgColor={bgColor}
+          setBgColor={setBgColor}
+        />
         <div>
           {" "}
           <div className="API-instruction">
@@ -82,15 +88,10 @@ const Posts = () => {
             </span>{" "}
             <br />
           </div>
-          <button
-            className="fetch-API-button"
-            onUpdate={window.scrollTo(1500, 1500)}
-            onClick={() => getColorData()}
-          >
+          <button className="fetch-API-button" onClick={() => getColorData()}>
             I Need More Color!
           </button>
         </div>
-        <ColorCard colorCardData={colorCardData} />
       </section>
     </div>
   );
