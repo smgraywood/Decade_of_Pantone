@@ -82,7 +82,11 @@ const Posts = () => {
             </span>{" "}
             <br />
           </div>
-          <button className="fetch-API-button" onClick={() => getColorData()}>
+          <button
+            className="fetch-API-button"
+            onUpdate={window.scrollTo(1500, 1500)}
+            onClick={() => getColorData()}
+          >
             I Need More Color!
           </button>
         </div>

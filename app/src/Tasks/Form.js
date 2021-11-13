@@ -56,7 +56,7 @@ const Form = ({ Post, addPost, closeForm }) => {
         </label>{" "}
         <br />
         <label>
-          Release Year:{" "}
+          Purchase Year:{" "}
           <input
             type="text"
             name="release_year"
