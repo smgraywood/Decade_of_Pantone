@@ -153,18 +153,20 @@ const Cards = ({ setBgColor, bgColor }) => {
           </div>
         </div>
       </button>
-      <button
-        className="card-button"
-        onClick={(e) => colorChange(e, "#F5DF4D")}
-      >
-        <div className="card">
-          <div className="top2021_2" id="cardDimension"></div>
-          <div className="card-text">
-            Illuminating <br /> #F5DF4D <br />
-            2021
+      <div id="extra-card">
+        <button
+          className="card-button"
+          onClick={(e) => colorChange(e, "#F5DF4D")}
+        >
+          <div className="card">
+            <div className="top2021_2" id="cardDimension"></div>
+            <div className="card-text">
+              Illuminating <br /> #F5DF4D <br />
+              2021
+            </div>
           </div>
-        </div>
-      </button>
+        </button>
+      </div>
     </section>
   );
 };

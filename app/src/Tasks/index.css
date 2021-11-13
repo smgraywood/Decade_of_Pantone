@@ -326,6 +326,16 @@ a:visited {
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
+#extra-card {
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  padding-left: 100px;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
 .convo-wrapper {
   margin: 10px auto;
   justify-content: center;
