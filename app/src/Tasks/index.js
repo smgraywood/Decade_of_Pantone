@@ -66,7 +66,7 @@ const Posts = () => {
         <div>
           {" "}
           <div className="API-instruction">
-            <span className="emojis" role="img" aria-label="hand pointing up">
+            <span className="emojis" role="img" aria-label="hand pointing down">
               👇🏻👇🏼👇🏽👇🏾👇🏿
             </span>
             <br />
@@ -77,7 +77,7 @@ const Posts = () => {
               </a>
             </p>
             <br />
-            <span className="emojis" role="img" aria-label="hand pointing up">
+            <span className="emojis" role="img" aria-label="hand pointing down">
               👇🏻👇🏼👇🏽👇🏾👇🏿
             </span>{" "}
             <br />
