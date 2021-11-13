@@ -48,7 +48,10 @@ const Posts = () => {
   return (
     <div style={{ backgroundColor: bgColor }}>
       <h1 className="title">A Decade of Pantone</h1>
-      {/* <button onClick={() => fetchTweets()}> TACO</button> */}
+      <h3 className="subtitle">
+        “I found I could say things with color and shapes that I couldn't say
+        any other way.” <br /> -GEORGIA O'KEEFFE
+      </h3>
       <section>
         <Cards bgColor={bgColor} setBgColor={setBgColor} />
         <JoinConvo openForm={openForm} />
