@@ -65,6 +65,23 @@ const Posts = () => {
         <br />
         <div>
           {" "}
+          <div className="API-instruction">
+            <span className="emojis" role="img" aria-label="hand pointing up">
+              👇🏻👇🏼👇🏽👇🏾👇🏿
+            </span>
+            <br />
+            <p>
+              &nbsp;Click here to display a color pallette from the&nbsp;
+              <a href="http://colormind.io/" target="_blank">
+                Colormind API
+              </a>
+            </p>
+            <br />
+            <span className="emojis" role="img" aria-label="hand pointing up">
+              👇🏻👇🏼👇🏽👇🏾👇🏿
+            </span>{" "}
+            <br />
+          </div>
           <button className="fetch-API-button" onClick={() => getColorData()}>
             I Need More Color!
           </button>

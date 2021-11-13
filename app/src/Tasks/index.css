@@ -207,6 +207,37 @@ label {
   cursor: pointer;
 }
 
+.API-instruction{
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  width: 550px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border: solid 1px #000;
+  opacity: .6;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+a{
+  margin-top: 15px;
+}
+.emojis{
+  margin-top: 8px;
+}
+a:link {
+  color: #959A9c;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #000;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .API_wrapper-wrapper{
   text-align: center;
   margin-top: 15px;
@@ -425,6 +456,25 @@ label {
   margin: auto;
   justify-content: center;
   border: solid 1px #FFF;
+}
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+.API-instruction{
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  width: 250px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  border: solid 1px #000;
+  opacity: .6;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
 }
 }
 
