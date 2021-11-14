@@ -48,7 +48,7 @@ const Posts = () => {
   return (
     <div style={{ backgroundColor: bgColor }}>
       <h1 className="title">A Decade of Pantone</h1>
-      <h3 className="subtitle">
+      <h3 aria-label="quote from Georgia O'Keefe" className="subtitle">
         “I found I could say things with color and shapes that I couldn't say
         any other way.” <br /> -GEORGIA O'KEEFFE
       </h3>
@@ -117,7 +117,11 @@ const JoinConvo = ({ openForm }) => {
           here to upload a photo of your flat lay with a description and the
           year the item was purchased to show your Pantone Pride!
         </p>
-        <button id="convo-button" onClick={openForm}>
+        <button
+          aria-label="button to show react form which allows you to enter information into the carousel database"
+          id="convo-button"
+          onClick={openForm}
+        >
           I Want to Show my Pantone Pride!
         </button>
       </div>

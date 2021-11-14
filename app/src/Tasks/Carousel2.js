@@ -14,7 +14,10 @@ const Carousel2 = ({ carouselData }) => {
 
 const CarouselCard = ({ cardInfo }) => {
   return (
-    <div className="db_card_div">
+    <div
+      className="db_card_div"
+      aria-label="display of the information entered into the react form. Displays color name, purchase year, an image desription and the instagram handle of the user"
+    >
       {/* Img div -> Left of side of card */}
       <div className="db_left_side_card">
         <h1 className="db_color_name">{cardInfo.color_name}</h1>

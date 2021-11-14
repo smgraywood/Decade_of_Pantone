@@ -15,6 +15,7 @@ const ColorCard = ({ setBgColor, bgColor, colorCardData }) => {
           <div className="API_card_wrapper">
             <div className="API_card">
               <button
+                aria-label="button to change page background to the displayed color"
                 className="API-card-button"
                 onClick={(e) => colorChange(e, `rgb(${c[0]}, ${c[1]}, ${c[2]}`)}
                 id="API_card_dimension"
@@ -23,7 +24,10 @@ const ColorCard = ({ setBgColor, bgColor, colorCardData }) => {
                 }}
                 key={`${index}`}
               ></button>
-              <div className="card-text">
+              <div
+                className="card-text"
+                aria-label="text of color card with RGB code for displayed color"
+              >
                 rgb({c[0]}, {c[1]}, {c[2]})
               </div>
             </div>

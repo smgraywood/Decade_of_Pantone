@@ -44,7 +44,7 @@ const Form = ({ Post, addPost, closeForm }) => {
       <br />
       <form className="pride_form">
         <h3 id="form-title">Show Your Pantone Pride!</h3>
-        <label>
+        <label aria-label="name of color featured in your outfit">
           Color Name:{" "}
           <input
             type="text"
@@ -55,7 +55,7 @@ const Form = ({ Post, addPost, closeForm }) => {
           />
         </label>{" "}
         <br />
-        <label>
+        <label aria-label="year you purchased the featured item in your outfit">
           Purchase Year:{" "}
           <input
             type="text"
@@ -66,7 +66,7 @@ const Form = ({ Post, addPost, closeForm }) => {
           />
         </label>{" "}
         <br />
-        <label>
+        <label aria-label="url of your image (you need to have your image hosted somewhere, right click on the image, copy the image address, and past it here)">
           Image URL:{" "}
           <input
             type="text"
@@ -77,7 +77,7 @@ const Form = ({ Post, addPost, closeForm }) => {
           />
         </label>{" "}
         <br />
-        <label>
+        <label aria-label="describe your outfit here">
           Image Description:{" "}
           <input
             type="text"
@@ -88,7 +88,7 @@ const Form = ({ Post, addPost, closeForm }) => {
           />
         </label>{" "}
         <br />
-        <label>
+        <label aria-label="enter your instagram handle here">
           Instagram Handle:{" "}
           <input
             type="text"
@@ -100,7 +100,11 @@ const Form = ({ Post, addPost, closeForm }) => {
         </label>{" "}
         <br />
         <br />
-        <button id="form-submit" onClick={handleSubmit}>
+        <button
+          aria-label="button to submit form"
+          id="form-submit"
+          onClick={handleSubmit}
+        >
           SUBMIT
         </button>
       </form>
