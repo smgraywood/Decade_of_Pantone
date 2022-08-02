@@ -9,7 +9,7 @@ https://pantone-decade.herokuapp.com/
 <h3>Overview</h3>
 <hr>
 <br>
-A Decade of Pantone is a social media app that allows users to reflect on how Pantone's Color of the Year has influenced fashion and design both in society at large, and in their own lives and closets. Users can access social media tagged with that color by clicking on the color of their choice on the page or can upload a photo of a flat lay of an outfit featuring that color. 
+A Decade of Pantone is a web app that allows users to reflect on how Pantone's Color of the Year has influenced fashion and design both in society at large, and in their own lives and closets. Users can access a larger scale view of each color by clicking on the color of their choice on the page or can upload a photo of a flat lay of an outfit featuring that color. They can also access different color combinations via the colorAPI in order to further inspire their creativity.
 <!-- put a demo here -->
 <br>
 <br>
