@@ -4,8 +4,6 @@ https://pantone-decade.herokuapp.com/
 
 <img src="https://media3.giphy.com/media/kq1ExXNO48IYhqOx9T/giphy.gif?cid=790b76115c06e2042ff712246dd3c9e5404b4beb76067f62&rid=giphy.gif&ct=g" width="300px">
 <br>
-<br>
-<br>
 <h3>Overview</h3>
 <hr>
 <br>
@@ -54,7 +52,8 @@ A Decade of Pantone is a web app that allows users to reflect on how Pantone's C
 More information and details can be found on:
 
 <a href="https://trello.com/b/UQQEMjhN/a-decade-of-pantone-app">Trello</a>
-
+<br>
+<br>
 
 <table>
   <tr>
