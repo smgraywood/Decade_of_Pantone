@@ -1,10 +1,8 @@
 # A Decade of Pantone
 <br> 
-<br>
-https://pantone-decade.herokuapp.com/
+See it live! https://pantone-decade.herokuapp.com/
 <br>
 <img src="https://media3.giphy.com/media/kq1ExXNO48IYhqOx9T/giphy.gif?cid=790b76115c06e2042ff712246dd3c9e5404b4beb76067f62&rid=giphy.gif&ct=g" width="300px">
-<br>
 <h4>Note: This project changed significantly over the course of its creation, design decisions changed, APIs were switched out, and user stories shifted to match these updates.</h4>
 <br>
 <h3>Overview</h3>
