@@ -2,7 +2,7 @@
 <br> 
 https://pantone-decade.herokuapp.com/
 
-<img src="https://raw.githubusercontent.com/smgraywood/Pantone/master/PantoneGIF.gif" width="300px">
+<img src="https://media3.giphy.com/media/kq1ExXNO48IYhqOx9T/giphy.gif?cid=790b76115c06e2042ff712246dd3c9e5404b4beb76067f62&rid=giphy.gif&ct=g" width="300px">
 <br>
 <br>
 <br>
