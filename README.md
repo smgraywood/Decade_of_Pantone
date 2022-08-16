@@ -54,28 +54,6 @@ A Decade of Pantone is a web app that allows users to reflect on how Pantone's C
 More information and details can be found on:
 
 <a href="https://trello.com/b/UQQEMjhN/a-decade-of-pantone-app">Trello</a>
-<br>
-<br>
-<br>
-Style Guide:
-<br>
-<br>
-<img src="https://raw.githubusercontent.com/smgraywood/Pantone/master/Style_Guide.png" width="300px">
-<br>
-Mockup:
-<br>
-<br>
-<img src="https://raw.githubusercontent.com/smgraywood/Pantone/master/Mockup.png" width="500px">
-<br>
-Data Model:
-<br>
-<br>
-<img src="https://raw.githubusercontent.com/smgraywood/Pantone/master/Schema.png" width="500px">
-<br>
-User Flow:
-<br>
-<br>
-<img src="https://raw.githubusercontent.com/smgraywood/Pantone/master/User Flow.png" width="300px">
 
 
 <table>
