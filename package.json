@@ -20,7 +20,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
     "prettier": "prettier --write .",
     "psql": "docker-compose exec -u postgres db ash -c 'psql ${POSTGRES_DB}'",
     "server:start": "cd server && npm start",
