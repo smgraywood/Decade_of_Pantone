@@ -4,8 +4,6 @@ import { Routes, Route } from "react-router-dom";
 
 import Tasks from "../Tasks";
 
-import styles from "./styles.module.scss";
-
 const App = () => (
   <>
     <main>
@@ -19,7 +17,7 @@ const App = () => (
 
 const Home = () => (
   <>
-    <header className={styles.header}>
+    <header>
       <h1>{process.env.REACT_APP_TITLE}</h1>
       <p>{process.env.REACT_APP_SUBTITLE}</p>
     </header>
